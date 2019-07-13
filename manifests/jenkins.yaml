@@ -93,6 +93,9 @@ metadata:
 spec:
   strategy:
     type: Recreate
+  selector:
+    matchLabels:
+      app: registry
   template:
     metadata:
       labels:
